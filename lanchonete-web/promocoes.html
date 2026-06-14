@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções - Lanchonete do Bairro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionais para a página de promoções */
+        .layout-promocoes {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            align-self: flex-start;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            color: #ff4757;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            color: #ff4757;
+        }
+
+        .conteudo-principal {
+            flex: 3;
+        }
+
+        .conteudo-principal h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .grid-promocoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .promocao {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .promocao h3 {
+            color: #ff4757;
+            margin-bottom: 10px;
+        }
+
+        .preco-antigo {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .preco-novo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2ed573;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#cardapio">Cardápio</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-promocoes">
+        <aside class="sidebar">
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#">Lanches</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Combos</a></li>
+                <li><a href="#">Sobremesas</a></li>
+            </ul>
+        </aside>
+
+        <main class="conteudo-principal">
+            <h2>Promoções do Dia</h2>
+            <div class="grid-promocoes">
+                <div class="promocao">
+                    <h3>Combo X-Bacon</h3>
+                    <p class="preco-antigo">De: R$25,00</p>
+                    <p class="preco-novo">Por: R$18,90</p>
+                </div>
+                <div class="promocao">
+                    <h3>Frango Grelhado</h3>
+                    <p class="preco-antigo">De: R$20,00</p>
+                    <p class="preco-novo">Por: R$14,90</p>
+                </div>
+                <div class="promocao">
+                    <h3>Milkshake 500ml</h3>
+                    <p class="preco-antigo">De: R$15,00</p>
+                    <p class="preco-novo">Por: R$10,90</p>
+                </div>
+                <div class="promocao">
+                    <h3>Batata Frita M</h3>
+                    <p class="preco-antigo">De: R$12,00</p>
+                    <p class="preco-novo">Por: R$8,90</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="contato">
+        <p>&copy; 2026 Lanchonete do Bairro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
