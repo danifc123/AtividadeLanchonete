@@ -37,5 +37,14 @@ function renderizarCardapio(itens = itensCardapio) {
     });
 }
 
+function filtrarPorCategoria(categoria) {
+    if (categoria === 'Todos') {
+        renderizarCardapio(itensCardapio);
+    } else {
+        const itensFiltrados = itensCardapio.filter(item => item.categoria === categoria);
+        renderizarCardapio(itensFiltrados);
+    }
+}
+
 // Inicializa a renderização quando a página carregar
 document.addEventListener('DOMContentLoaded', () => renderizarCardapio());
